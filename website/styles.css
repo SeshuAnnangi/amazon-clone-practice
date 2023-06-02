@@ -1,0 +1,57 @@
+ div{
+  margin=0;
+  background-color: #79E0EE;
+}
+
+/* .top-container{
+  background-color: #79E0EE;
+  height: 200px;
+  width: 200px;
+  border: solid 10px;
+  padding: 20px;
+}
+.middle-container{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border: solid 20px;
+  margin-left: 260px;
+}
+.bottom-container{
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  border: solid 10px;
+  margin-left: 500px;
+} */
+/* body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+} */
+
+.h1{
+  margin-top: 0;
+  font-family: 'Sacramento', cursive;
+}
+
+.img {
+  height=100px;
+  width=1000px;
+}
+
+.top-container{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
+}
+.middle-container{
+
+}
+.bottom-container{
+
+}
