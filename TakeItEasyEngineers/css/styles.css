@@ -1,0 +1,37 @@
+/* #{
+  padding: 0;
+  margin: 0;
+} */
+.Random{
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+}
+.r{
+  background-color: #F9FBE7;
+  font-size: 40px;
+  color: #D4ADFC;
+}
+
+.p{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#output{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.btn1{
+  font-size: large;
+  padding: 10px 20px;
+  background-color: #015a73;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #003543;
+    translate: 0px -3px;
+        }

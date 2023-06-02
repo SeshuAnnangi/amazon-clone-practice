@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Quote Generator</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.hero{
+    color: rgb(92, 15, 15);
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.par{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#output{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.btn1{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(3, 190, 190);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgb(0, 164, 164);
+    translate: 0px -3px;
+}
+
+.inputText{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#userInput{
+    border-radius: 10px;
+    padding : 5px 15px
+}
+
+#btnsubmit{
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(61, 184, 251);
+    transition: 0.3s ease;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#btnsubmit:hover{
+    background-color: rgb(0, 164, 164);
+    /* translate: 0px -3px; */
+}
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="hero">Random Quote Generator</h1>
+        <p class="par">A web application that lets you display a quote from the collection of quotes.</p>
+        <p id="output">"Quote Goes Here"</p>
+        <button class="btn1" onclick="displayQuote()">Generate</button>
+
+        <p class="inputText">Add custom quotes and store it in the server using the below option! :</p>
+
+        <div id="userInput">
+            <form id="form1">
+                <label for="input1">Enter the Quote :</label>
+                <input type="text" id="input1" placeholder="Your thoughts..."><br>
+                <input type="submit" id="btnsubmit" onclick="addQuote()">
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+       var quotes = ["The key to success in life is to do what you love! - unknown",
+"Health is wealth",
+"Service to mankind is service to God",
+"Help ever hurt never",
+"no pain no gain",
+"slow and steady wins the race",
+"if  dont try for what you want then dont cry for what you lost",
+"Abhi kamayega to baad me khaayega"
+];
+
+function displayQuote(){
+    let index = Math.floor(Math.random()*quotes.length);  
+    let quoteOutput = quotes[index];
+    document.getElementById("output").innerHTML = quoteOutput;
+}
+
+function addQuote(){
+    let inputQuote = document.getElementById("input1").value;
+    quotes.push(inputQuote);
+    console.log(quotes[quotes.length-1]);
+    if (document.getElementById("input1").value == ""){
+        window.alert("Please enter some text!");
+    }
+    else{
+        window.alert("Quote inserted successfully!");
+    }
+    document.getElementById("input1").value == "";
+}
+    </script>
+</body>
+
+</html>
