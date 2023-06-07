@@ -1,0 +1,11 @@
+.id{
+  height: 200px;
+  width: 200px;
+  background-image: url("programming_photo.jpg");
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  right: 0px;
+  top: 50px;
+}
