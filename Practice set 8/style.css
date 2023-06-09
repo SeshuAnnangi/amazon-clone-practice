@@ -1,0 +1,21 @@
+.id{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 400px;
+  top: 100px;
+  border: 10px solid #FFE660;
+  border-radius: 50%;
+  border-top: 10px solid #4ECDC4;
+  animation: spinAnimate 2s ease-in-out 1s infinite normal;
+}
+
+
+@keyframes spinAnimate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,46 @@
+.navbar{
+  background-color: pink;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+li{
+  list-style-type: none;
+}
+
+/*Question 2*/
+/* .outerbox{
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerbox{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+} */
+
+.innerbox{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  align-self: flex-start; /*align-self has highest priority compared to align-items. so, it will execute first later align-items will execute.*/
+}
+
+.outerbox{
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
