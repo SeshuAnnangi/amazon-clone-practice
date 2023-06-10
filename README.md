@@ -16,3 +16,5 @@ In practice set 7, By using **Media Queries** we have developed a box with diffe
 **NOTE:** Maximum the **Media Queries** will based on the width.
 
 In Practice set 8, we have created a **simple loader**.
+
+I have developed the **Amazon clone** website by using the **HTML** and **CSS** in amazon clone folder.
